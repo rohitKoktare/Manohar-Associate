@@ -380,8 +380,8 @@ By clicking "I Agree," you confirm that you have read and understood this discla
               <Link href="#services" className="text-slate-700 hover:text-amber-600 transition-colors">
                 Services
               </Link>
-              <Link href="#blogs" className="text-slate-700 hover:text-amber-600 transition-colors">
-                Legal Insights
+              <Link href="/blogs" className="text-slate-700 hover:text-amber-600 transition-colors">
+                Blogs
               </Link>
               <Link href="#faq" className="text-slate-700 hover:text-amber-600 transition-colors">
                 FAQ
@@ -416,8 +416,8 @@ By clicking "I Agree," you confirm that you have read and understood this discla
                 <Link href="#services" className="text-slate-700 hover:text-amber-600 transition-colors">
                   Services
                 </Link>
-                <Link href="#blogs" className="text-slate-700 hover:text-amber-600 transition-colors">
-                  Legal Insights
+                <Link href="/blogs" className="text-slate-700 hover:text-amber-600 transition-colors">
+                  Blogs
                 </Link>
                 <Link href="#faq" className="text-slate-700 hover:text-amber-600 transition-colors">
                   FAQ
@@ -685,10 +685,12 @@ By clicking "I Agree," you confirm that you have read and understood this discla
                     <CardDescription className="text-slate-600 leading-relaxed mb-4">{post.excerpt}</CardDescription>
                     <div className="flex items-center justify-between">
                       <span className="text-sm text-slate-500">{post.readTime}</span>
-                      <Button variant="ghost" size="sm" className="text-amber-600 hover:text-amber-700">
-                        Read More
-                        <ArrowRight className="ml-1 h-4 w-4" />
-                      </Button>
+                      <Link href={`/blogs/${post.slug}`}>
+                        <Button variant="ghost" size="sm" className="text-amber-600 hover:text-amber-700">
+                          Read More
+                          <ArrowRight className="ml-1 h-4 w-4" />
+                        </Button>
+                      </Link>
                     </div>
                   </CardContent>
                 </Card>
@@ -703,10 +705,12 @@ By clicking "I Agree," you confirm that you have read and understood this discla
             viewport={{ once: true }}
             className="text-center mt-12"
           >
-            <Button size="lg" variant="outline" className="border-amber-600 text-amber-600 hover:bg-amber-50">
-              <BookOpen className="mr-2 h-4 w-4" />
-              Visit Our Blog
-            </Button>
+            <Link href="/blogs">
+              <Button size="lg" variant="outline" className="border-amber-600 text-amber-600 hover:bg-amber-50">
+                <BookOpen className="mr-2 h-4 w-4" />
+                Visit Our Blog
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </section>
@@ -969,7 +973,7 @@ By clicking "I Agree," you confirm that you have read and understood this discla
                   </Link>
                 </li>
                 <li>
-                  <Link href="#blogs" className="text-slate-400 hover:text-white transition-colors">
+                  <Link href="/blogs" className="text-slate-400 hover:text-white transition-colors">
                     Legal Insights
                   </Link>
                 </li>
