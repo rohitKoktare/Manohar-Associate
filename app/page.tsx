@@ -318,30 +318,32 @@ By clicking "I Agree," you confirm that you have read and understood this discla
     <div className="min-h-screen bg-white">
       {/* Disclaimer Modal */}
       <Dialog open={showDisclaimer} onOpenChange={setShowDisclaimer}>
-        <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+        <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto p-4 sm:p-6">
           <DialogHeader>
-            <DialogTitle className="flex items-center gap-2">
+            <DialogTitle className="flex items-center gap-2 text-lg sm:text-xl">
               <AlertTriangle className="h-5 w-5 text-amber-600" />
               {disclaimerContent[disclaimerLanguage as keyof typeof disclaimerContent].title}
             </DialogTitle>
           </DialogHeader>
 
           <Tabs value={disclaimerLanguage} onValueChange={setDisclaimerLanguage} className="w-full">
-            <TabsList className="grid w-full grid-cols-3">
+            <TabsList className="grid w-full grid-cols-3 mb-4">
               <TabsTrigger value="english">English</TabsTrigger>
               <TabsTrigger value="hindi">हिंदी</TabsTrigger>
               <TabsTrigger value="marathi">मराठी</TabsTrigger>
             </TabsList>
 
             {Object.entries(disclaimerContent).map(([lang, content]) => (
-              <TabsContent key={lang} value={lang} className="mt-4">
+              <TabsContent key={lang} value={lang} className="mt-2">
                 <div className="space-y-4">
-                  <div className="text-sm text-slate-600 whitespace-pre-line leading-relaxed">{content.content}</div>
-                  <div className="flex gap-4 pt-4">
-                    <Button onClick={handleDisclaimerAccept} className="bg-slate-800 hover:bg-slate-700">
+                  <div className="text-sm text-slate-600 whitespace-pre-line leading-relaxed max-h-[50vh] overflow-y-auto">
+                    {content.content}
+                  </div>
+                  <div className="flex flex-col sm:flex-row gap-3 pt-4 sticky bottom-0 bg-background">
+                    <Button onClick={handleDisclaimerAccept} className="bg-slate-800 hover:bg-slate-700 w-full sm:w-auto">
                       {content.agree}
                     </Button>
-                    <Button variant="outline" onClick={() => window.history.back()}>
+                    <Button variant="outline" onClick={() => window.history.back()} className="w-full sm:w-auto">
                       {content.exit}
                     </Button>
                   </div>
