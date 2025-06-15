@@ -389,7 +389,7 @@ By clicking "I Agree," you confirm that you have read and understood this discla
               <Link href="#contact" className="text-slate-700 hover:text-amber-600 transition-colors">
                 Contact
               </Link>
-              <Button className="bg-slate-800 hover:bg-slate-700 text-white">Book Consultation</Button>
+              {/* <Button className="bg-slate-800 hover:bg-slate-700 text-white">Book Consultation</Button> */}
             </nav>
 
             {/* Mobile Menu Button */}
