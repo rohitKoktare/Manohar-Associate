@@ -727,7 +727,7 @@ By clicking "I Agree," you confirm that you have read and understood this discla
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <Badge className="mb-4 bg-amber-100 text-amber-800">FAQ</Badge>
+            {/* <Badge className="mb-4 bg-amber-100 text-amber-800">FAQ</Badge> */}
             <h2 className="text-4xl font-bold text-slate-800 mb-6">Frequently Asked Questions</h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               Find answers to common questions about our legal services and processes.
@@ -767,7 +767,7 @@ By clicking "I Agree," you confirm that you have read and understood this discla
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <Badge className="mb-4 bg-slate-100 text-slate-800">Client Testimonials</Badge>
+            {/* <Badge className="mb-4 bg-slate-100 text-slate-800">Client Testimonials</Badge> */}
             <h2 className="text-4xl font-bold text-slate-800 mb-6">What Our Clients Say</h2>
           </motion.div>
 
@@ -815,7 +815,7 @@ By clicking "I Agree," you confirm that you have read and understood this discla
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <Badge className="mb-4 bg-amber-600 text-white">Contact Us</Badge>
+            {/* <Badge className="mb-4 bg-amber-600 text-white">Contact Us</Badge> */}
             <h2 className="text-4xl font-bold mb-6">We're Here to Help</h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
               Get in touch with our legal experts for a consultation. We're committed to providing you with the best
