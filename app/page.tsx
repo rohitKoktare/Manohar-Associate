@@ -450,16 +450,18 @@ By clicking "I Agree," you confirm that you have read and understood this discla
                 by your side to protect your rights and interests.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                {/* <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <Button size="lg" className="bg-slate-800 hover:bg-slate-700 text-white">
                     Book a Consultation
                     <ChevronRight className="ml-2 h-4 w-4" />
                   </Button>
-                </motion.div>
+                </motion.div> */}
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Button size="lg" variant="outline" className="border-amber-600 text-amber-600 hover:bg-amber-50">
-                    Explore Our Services
-                  </Button>
+                  <Link href="#services">
+                    <Button size="lg" variant="outline" className="border-amber-600 text-amber-600 hover:bg-amber-50">
+                      Explore Our Services
+                    </Button>
+                  </Link>
                 </motion.div>
               </div>
             </motion.div>
@@ -510,7 +512,7 @@ By clicking "I Agree," you confirm that you have read and understood this discla
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <Badge className="mb-4 bg-slate-100 text-slate-800">About Us</Badge>
+            {/* <Badge className="mb-4 bg-slate-100 text-slate-800">About Us</Badge> */}
             <h2 className="text-4xl font-bold text-slate-800 mb-6">Who We Are</h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               Manor & Associates is a full-service law firm based in Pune, Maharashtra, serving clients across India.
@@ -595,7 +597,7 @@ By clicking "I Agree," you confirm that you have read and understood this discla
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <Badge className="mb-4 bg-amber-100 text-amber-800">Our Services</Badge>
+            {/* <Badge className="mb-4 bg-amber-100 text-amber-800">Our Services</Badge> */}
             <h2 className="text-4xl font-bold text-slate-800 mb-6">Our Areas of Practice</h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               We provide comprehensive legal services across multiple practice areas, ensuring expert representation for
@@ -614,10 +616,10 @@ By clicking "I Agree," you confirm that you have read and understood this discla
               <motion.div key={index} variants={fadeInUp} {...scaleOnHover}>
                 <Card className="h-full hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
                   <CardHeader>
-                    <div className={`inline-flex p-3 rounded-full mb-4 ${service.color}`}>
+                    <div className={`inline-flex p-3 rounded-full mb-4 ${service.color} flex-row items-center space-x-3`}>
                       <service.icon className="h-8 w-8" />
+                      <CardTitle className="text-xl text-slate-800">{service.title}</CardTitle>
                     </div>
-                    <CardTitle className="text-xl text-slate-800">{service.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <CardDescription className="text-slate-600 leading-relaxed">{service.description}</CardDescription>
@@ -634,10 +636,10 @@ By clicking "I Agree," you confirm that you have read and understood this discla
             viewport={{ once: true }}
             className="text-center mt-12"
           >
-            <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white">
+            {/* <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white">
               Schedule a Legal Consultation
               <ChevronRight className="ml-2 h-4 w-4" />
-            </Button>
+            </Button> */}
           </motion.div>
         </div>
       </section>
@@ -652,7 +654,7 @@ By clicking "I Agree," you confirm that you have read and understood this discla
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <Badge className="mb-4 bg-slate-100 text-slate-800">Legal Insights</Badge>
+            {/* <Badge className="mb-4 bg-slate-100 text-slate-800">Legal Insights</Badge> */}
             <h2 className="text-4xl font-bold text-slate-800 mb-6">Recent Articles</h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               Stay informed about your legal rights and responsibilities with our expert insights and analysis.
