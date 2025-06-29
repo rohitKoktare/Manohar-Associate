@@ -154,6 +154,12 @@ export default function ManorAssociatesWebsite() {
       description: "Consumer forum disputes, employment termination, labour law compliance, workplace harassment",
       color: "bg-purple-50 text-purple-600",
     },
+    {
+      icon: UserCheck,
+      title: "RERA Legal Services",
+      description: "Comprehensive legal services under the Real Estate. Fees and Engagement. Billing and Expenses",
+      color: "bg-purple-50 text-purple-600",
+    },
   ]
 
   const testimonials = [
